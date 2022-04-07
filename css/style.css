@@ -81,14 +81,12 @@ html {
 }
 
 .footer {
-  position: static;
   width: 100%;
   padding: 1rem;
   font-size: 1.2rem;
   display: flex;
-  align-self: flex-end;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   background-color: #833e71;
 }
 
@@ -99,11 +97,9 @@ html {
 
 .pexels {
   margin-bottom: 0.7rem;
-  display: flex;
-  justify-content: center;
+  display: inline-block;
 }
 
 .icons {
-  display: flex;
-  justify-content: center;
+  display: inline-block;
 }
