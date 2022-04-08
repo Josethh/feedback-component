@@ -9,13 +9,23 @@ html {
   /* 1.6rem == 16px */
 }
 
+:root {
+  --white: #ffffff;
+  --dark-green: rgba(0, 128, 55, 0.6);
+  --light-green: #4bb437;
+  --dark-purple: #833e71;
+  --light-purple: #c697bd;
+
+}
+
 .body {
-  color: white;
+  color:var(--white);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #833e71;
+  background-color: var(--dark-purple);
 }
 
 .image img {
@@ -26,10 +36,9 @@ html {
 .main {
   margin-bottom: 5rem;
   width: 20rem;
-  height: 30rem;
   padding: 2rem;
   border-radius: 1.5rem;
-  background-color: rgba(0, 128, 55, 0.6);
+  background: var(--dark-green);
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -37,11 +46,11 @@ html {
 }
 
 .title {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 .subtitle {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 1.2rem 0rem;
 }
 
@@ -52,32 +61,73 @@ html {
 }
 
 .white-stars img {
-  width: 3rem;
+  width: 2.9rem;
 }
 
 .green-stars {
   position: absolute;
+  cursor: pointer;
 }
 
 .green-stars img {
-  width: 3rem;
+  width: 2.9rem;
 }
 
 .comment-box {
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  height: 0rem;
+}
+
+.comment-box label {
+  color: var(--white);
+  display: inline-block;
+  margin-bottom: 0.8rem;
+}
+
+.comment-box textarea {
+  background: none;
+  color: var(--white);
+  font-size: 0.8rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 0.1rem solid var(--white);
+  border-radius: 1rem;
+  display: inline-block;
+  height: 8rem;
+  margin-bottom: 2.4rem;
+  padding: 1.2rem;
+  width: 100%;
+}
+
+.comment-box textarea::placeholder {
+  color: var(--white);
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: inline-block;
+  animation: visible 0.3s ease-in-out forwards;
+}
+
+@keyframes visible {
+  from {
+    height: 0rem;
+  }
+  to {
+    height: 13.8rem; 
+  }
 }
 
 .submit-button {
   width: 100%;
   border: none;
   border-radius: 1rem;
+  cursor: pointer;
   padding: 0.8rem;
   font-size: 1.2rem;
-  color: white;
-  background-color: #4bb437; 
+  color: var(--white);
+  background-color: var(--light-green);
 }
 
 .footer {
@@ -87,11 +137,10 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #833e71;
 }
 
 .footer a {
-  color: #c697bd;
+  color: var(--light-purple);
   text-decoration: none;
 }
 
