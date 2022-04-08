@@ -35,7 +35,7 @@ html {
 
 .main {
   margin-bottom: 5rem;
-  width: 20rem;
+  width: 30rem;
   padding: 2rem;
   border-radius: 1.5rem;
   background: var(--dark-green);
@@ -46,11 +46,11 @@ html {
 }
 
 .title {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 
 .subtitle {
-  font-size: 1rem;
+  font-size: 1.6rem;
   margin: 1.2rem 0rem;
 }
 
@@ -61,7 +61,7 @@ html {
 }
 
 .white-stars img {
-  width: 2.9rem;
+  width: 4rem;
 }
 
 .green-stars {
@@ -70,7 +70,7 @@ html {
 }
 
 .green-stars img {
-  width: 2.9rem;
+  width: 4rem;
 }
 
 .comment-box {
@@ -80,13 +80,13 @@ html {
 .comment-box label {
   color: var(--white);
   display: inline-block;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
 }
 
 .comment-box textarea {
   background: none;
   color: var(--white);
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 0.1rem solid var(--white);
   border-radius: 1rem;
@@ -124,8 +124,8 @@ html {
   border: none;
   border-radius: 1rem;
   cursor: pointer;
-  padding: 0.8rem;
-  font-size: 1.2rem;
+  padding: 1.2rem;
+  font-size: 1.6rem;
   color: var(--white);
   background-color: var(--light-green);
 }
